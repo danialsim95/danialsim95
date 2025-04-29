@@ -1,4 +1,4 @@
-### Hello World 🌍 I am Kirito! <br/> Nice to meet you in this space!
+### Hello World 🌍 I am Danial! <br/> Nice to meet you in this space!
 
 ### Read a little bio about me
 
