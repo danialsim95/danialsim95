@@ -1,5 +1,3 @@
-<img align="right" width="220" src="public/images/danial-sim-portrait.png" alt="Portrait of Danial Sim" />
-
 # Hi, I'm Danial Sim.
 
 **Full-stack developer. Mobile engineer. Curious builder.**
@@ -9,8 +7,6 @@ Based in Selangor, Malaysia. I turn ideas into useful software, from the first i
 My work spans enterprise mobile apps, business workflows, backend migrations, and technical leadership. I've also worked in university research at UKM.
 
 [Portfolio](https://danialsim95.github.io/danialsim95/) · [Email me](mailto:danialsim95@gmail.com) · [LinkedIn](https://www.linkedin.com/in/danialsim95/) · [Resume (PDF)](https://drive.google.com/file/d/1YcfpXOFXL_nIlrV_YZlh4ltybcS-MOfb/view) · [Explore my code](https://github.com/danialsim95?tab=repositories)
-
-<br clear="right" />
 
 ## What I Build
 

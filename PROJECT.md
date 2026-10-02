@@ -20,7 +20,7 @@ Use `npm run build` followed by `npm start` to preview the actual static export.
 - `lib/content.json`: projects and full job history, the live site's build-time content source.
 - `lib/profile.ts`: contact details, current skills, and future interests.
 - `public/images/engineering-workspace.webp`: generated conceptual senior-engineering workspace for the hero, not a real workplace photograph or a client product screenshot. The theme uses graphite, soft teal, and cool white.
-- `public/images/danial-sim-portrait.png`: Danial's supplied portrait, used without alteration in the navbar and GitHub profile README.
+- `public/images/danial-sim-portrait.png`: Danial's supplied portrait, used without alteration in the website navbar. The profile README relies on his GitHub account avatar.
 - `public/tech/`: locally hosted Devicon technology logos with the upstream license, including MySQL. CI/CD uses the GitHub Actions mark, also used by this portfolio.
 - The portfolio showcases real projects Danial worked on. Project diagrams illustrate those projects; they are not product screenshots or measured results.
 - Danial confirmed the job history: Senior Full-stack Developer (May–Sep 2025), Technical Lead (Oct 2025–Aug 2026), and no Alpro entry.
