@@ -13,7 +13,7 @@
     {"id":"flow-lead","role":"Technical Lead","company":"Flow Digital Asia","period":"Oct 2025 - Aug 2026","description":"Technical leadership across mobile, web, and backend delivery.","current":false},
     {"id":"flow-senior","role":"Senior Full-stack Developer","company":"Flow Digital Asia","period":"May - Sep 2025","description":"Full-stack development across business applications and services.","current":false},
     {"id":"flow-developer","role":"Full Stack Developer","company":"Flow Digital Asia","period":"Jan 2024 - Apr 2025","description":"Web and application development across the full stack.","current":false},
-    {"id":"freelance","role":"Software Development Engineer","company":"Independent / Freelance","period":"Jul 2016 - Present","description":"Software development for client projects.","current":true},
+    {"id":"freelance","role":"Software Development Engineer","company":"Independent / Freelance","period":"Jan 2017 - Present","description":"Software development for client projects.","current":true},
     {"id":"ukm-graduate","role":"Graduate Research Assistant","company":"National University of Malaysia (UKM)","period":"Mar 2021 - Sep 2023","description":"Research and development in a university environment.","current":false},
     {"id":"ukm-research","role":"Research Assistant","company":"National University of Malaysia (UKM)","period":"Sep 2020 - Mar 2021","description":"Research support and technical development.","current":false},
     {"id":"timetec","role":"Mobile Application Developer","company":"TimeTec","period":"Jan - Aug 2020","description":"Mobile application development.","current":false},

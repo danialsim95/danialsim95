@@ -13,6 +13,7 @@ test("filters, case studies, and career history", async ({ page }) => {
   await page.getByRole('button', { name: 'View the full journey' }).click();
   await expect(page.locator('.experience-row')).toHaveCount(10);
   await expect(page.locator('.experience-row').first()).toContainText('Oct 2025 - Aug 2026');
+  await expect(page.locator('.experience-row').filter({hasText:'Independent / Freelance'})).toContainText('Jan 2017 - Present');
 });
 test("contact, artwork, metadata, and mobile layout", async ({ page }) => {
   await page.goto(path('/'));
@@ -97,6 +98,7 @@ test("resume, legacy policy, and unknown project", async ({ page }) => {
   await page.goto(path('/resume/'));
   await expect(page.getByRole('heading', {name:'Danial Sim',exact:true})).toBeVisible();
   await expect(page.locator('.experience-row')).toHaveCount(10);
+  await expect(page.locator('.experience-row').filter({hasText:'Independent / Freelance'})).toContainText('Jan 2017 - Present');
   await page.goto(path('/scoscreen/index.html'));
   await expect(page.getByRole('heading', {name:'Privacy Policy',exact:true})).toBeVisible();
   await page.goto(path('/app/scoscreen/'));

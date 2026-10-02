@@ -12,3 +12,8 @@ test("project schema rejects unsafe identifiers and links", () => {
   assert.equal(projectSchema.safeParse({ ...content.projects[0], slug: "../private" }).success, false);
   assert.equal(projectSchema.safeParse({ ...content.projects[0], source: "javascript:alert(1)" }).success, false);
 });
+test("freelance history starts in January 2017", () => {
+  const experience = portfolioSchema.parse(content).experiences.find(item => item.id === "freelance");
+  assert.equal(experience?.period, "Jan 2017 - Present");
+  assert.equal(experience?.current, true);
+});
