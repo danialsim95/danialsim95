@@ -1,0 +1,117 @@
+import { test, expect } from "@playwright/test";
+const path = (value: string) => `${process.env.NEXT_PUBLIC_BASE_PATH || ''}${value}`;
+test("filters, case studies, and career history", async ({ page }) => {
+  await page.goto(path('/'));
+  await expect(page.getByRole('heading', { name: 'Danial Sim.', exact: true })).toBeVisible();
+  await page.getByRole('button', { name: 'Backend', exact: true }).click();
+  await expect(page.locator('.project')).toHaveCount(1);
+  await page.locator('.project').click();
+  await expect(page.getByRole('heading', { name: 'A stronger foundation.' })).toBeVisible();
+  await page.getByRole('link', { name: 'Back to selected work' }).click();
+  await page.getByRole('button', { name: 'Explore more projects' }).click();
+  await expect(page.locator('.project')).toHaveCount(8);
+  await page.getByRole('button', { name: 'View the full journey' }).click();
+  await expect(page.locator('.experience-row')).toHaveCount(10);
+  await expect(page.locator('.experience-row').first()).toContainText('Oct 2025 - Aug 2026');
+});
+test("contact, artwork, metadata, and mobile layout", async ({ page }) => {
+  await page.goto(path('/'));
+  await page.screenshot({ path: `artifacts/portfolio-${test.info().project.name}.png`, fullPage: true });
+  await page.getByLabel("LET'S TALK ABOUT").selectOption('A full-time opportunity');
+  await expect(page.getByRole('link', {name:'Start a conversation'})).toHaveAttribute('href', /A%20full-time%20opportunity/);
+  expect((await page.request.get(path('/images/engineering-workspace.webp'))).ok()).toBe(true);
+  await expect(page.getByRole('link', {name:'View my resume (PDF)'})).toHaveAttribute('href', /drive\.google\.com\/file\/d\/1YcfpXOFXL_nIlrV_YZlh4ltybcS-MOfb/);
+  await expect(page.getByRole('link', {name:'Email Danial',exact:true})).toHaveAttribute('href', /^mailto:danialsim95@gmail\.com/);
+  await expect(page.getByRole('button', {name:'Copy email address'})).toHaveCount(0);
+  const portrait = page.getByRole('img', {name:'Portrait of Danial Sim'});
+  await portrait.scrollIntoViewIfNeeded();
+  await expect(portrait).toBeVisible();
+  await expect.poll(() => portrait.evaluate(element => (element as HTMLImageElement).naturalWidth)).toBeGreaterThan(0);
+  await expect(page.locator('.navigation')).toContainText('danialsim');
+  await expect(page.locator('.navigation img.nav-portrait')).toHaveCount(1);
+  await expect(page.locator('#about img')).toHaveCount(0);
+  await expect(page.locator('.nav-contact')).toHaveCSS('background-color', 'rgb(155, 202, 196)');
+  await expect(page.locator('.nav-contact')).toHaveCSS('color', 'rgb(27, 34, 39)');
+  await page.locator('.navigation').screenshot({path:`artifacts/navbar-${test.info().project.name}.png`});
+  await expect(page.locator('.visual-footnote').first()).toContainText('PROJECT /');
+  await expect(page.locator('.visual-footnote')).not.toContainText(['ENGINEERING STUDY']);
+  await expect(page.locator('.navigation .brand-name')).toHaveText('danialsim');
+  await expect(page.locator('.navigation .brand-role')).toHaveText('IDEAS. ENGINEERED.');
+  await expect(page.locator('.saas-intro')).toContainText('open to other technology stacks');
+  await expect.poll(() => page.locator('img.social-logo').evaluateAll(images => images.length > 0 && images.every(img => (img as HTMLImageElement).complete && (img as HTMLImageElement).naturalWidth > 0))).toBe(true);
+  await expect(page.locator('meta[property="og:title"]')).toHaveAttribute('content', /Danial Sim/);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  if (test.info().project.name === 'mobile') {
+    await page.getByRole('button', {name:'Open navigation'}).click();
+    await page.getByRole('navigation').getByRole('link', {name:'Stack', exact:true}).click();
+    await expect(page.getByRole('button', {name:'Open navigation'})).toHaveAttribute('aria-expanded', 'false');
+  }
+});
+test("technology logos, accessible tooltips, and F&N case study", async ({ page }) => {
+  await page.goto(path('/'));
+  await expect(page.locator('.stack-logo-item')).toHaveCount(10);
+  await page.locator('.stack-logo-item').first().focus();
+  await expect(page.locator('#technology-tooltip-0')).toBeVisible();
+  await expect(page.locator('#technology-tooltip-0')).toHaveText('Flutter');
+  await expect.poll(() => page.locator('img.technology-logo').evaluateAll(images => images.every(img => (img as HTMLImageElement).complete && (img as HTMLImageElement).naturalWidth > 0))).toBe(true);
+  await expect(page.locator('.future-tags')).toContainText('Java Spring Boot');
+  await expect(page.locator('.future-tags')).toContainText('Nuxt');
+  await page.goto(path('/projects/fngo-eorder/'));
+  await expect(page.getByRole('heading', {name:'From ordering to loyalty.'})).toBeVisible();
+  await expect(page.getByRole('heading', {name:'Ordering, promotions, and loyalty'})).toBeVisible();
+  await expect(page.locator('.case-study-delivery')).toContainText('Google Play');
+});
+test("section motion reveals content and responds to reduced motion", async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: 'no-preference' });
+  await page.goto(path('/'));
+  const target = page.locator('#stack .section-heading');
+  await expect(target).toHaveAttribute('data-reveal', 'pending');
+  await target.scrollIntoViewIfNeeded();
+  await expect(target).toHaveAttribute('data-reveal', 'visible');
+  await expect.poll(() => target.evaluate(element => getComputedStyle(element).opacity)).toBe('1');
+  await page.locator('.hero').scrollIntoViewIfNeeded();
+  await expect(target).toHaveAttribute('data-reveal', 'pending');
+  await target.scrollIntoViewIfNeeded();
+  await expect(target).toHaveAttribute('data-reveal', 'visible');
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  await expect(page.locator('#services .section-heading')).toHaveAttribute('data-reveal', 'visible');
+});
+test("section navigation follows both directions and respects reduced motion", async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  await page.goto(path('/'));
+  async function navigate(name: string, id: string) {
+    if (test.info().project.name === 'mobile') await page.getByRole('button', {name:'Open navigation'}).click();
+    const link = page.getByRole('navigation').getByRole('link', {name, exact:true});
+    await link.click();
+    await expect(page).toHaveURL(new RegExp(`#${id}$`));
+    await expect(page.locator(`.nav-links a[href$="/#${id}"]`)).toHaveAttribute('aria-current', 'location');
+    await expect(page.locator(`#${id}`)).toBeFocused();
+    await expect.poll(() => page.locator(`#${id}`).evaluate(element => Math.round(element.getBoundingClientRect().top))).toBe(92);
+  }
+  await navigate('Experience', 'experience');
+  await navigate('About', 'about');
+  await navigate('Stack', 'stack');
+  expect(await page.locator('.socials .social-logo').first().evaluate(element => getComputedStyle(element).backgroundColor)).toBe('rgba(0, 0, 0, 0)');
+});
+test("resume, legacy policy, and unknown project", async ({ page }) => {
+  await page.goto(path('/resume/'));
+  await expect(page.getByRole('heading', {name:'Danial Sim',exact:true})).toBeVisible();
+  await expect(page.locator('.experience-row')).toHaveCount(10);
+  await page.goto(path('/scoscreen/index.html'));
+  await expect(page.getByRole('heading', {name:'Privacy Policy',exact:true})).toBeVisible();
+  expect((await page.goto(path('/projects/unknown-project/')))?.status()).toBe(404);
+});
+test("static routes, base-path assets, and production metadata", async ({page}) => {
+  await page.goto(path('/'));
+  const assets = await page.locator('img[src]').evaluateAll(images => images.map(image => image.getAttribute('src')!));
+  for (const src of new Set(assets)) expect((await page.request.get(src)).ok(), src).toBe(true);
+  const links = await page.locator('.project').evaluateAll(items => items.map(item => item.getAttribute('href')!));
+  for (const href of links) expect((await page.request.get(href)).ok(), href).toBe(true);
+  expect((await page.request.get(path('/sitemap.xml'))).ok()).toBe(true);
+  expect((await page.request.get(path('/robots.txt'))).ok()).toBe(true);
+  const og = await page.locator('meta[property="og:image"]').getAttribute('content');
+  expect(og).toContain(path('/images/social-preview.png'));
+  const preview = await page.request.get(path('/images/social-preview.png'));
+  expect(preview.ok()).toBe(true);
+  expect(preview.headers()['content-type']).toContain('image/png');
+});
