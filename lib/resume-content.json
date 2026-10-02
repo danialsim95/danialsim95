@@ -37,27 +37,15 @@
   },
   {
     "kind": "bullet",
-    "text": "Led a 6-developer Flutter mobile team, owning architecture, code review, technical direction and release engineering for FlowHubr, a project, task and timesheet management platform."
+    "text": "Led a mobile team of 6, owning architecture, code review and Android and iOS release engineering. Delivered Flutter clients and shared Laravel APIs for enterprise and SaaS products."
   },
   {
     "kind": "bullet",
-    "text": "Migrated FlowHubr from Riverpod to BLoC and Clean Architecture across 13 feature modules. Built 1,319 automated tests and achieved 88.3% line coverage with an enforced 85% CI threshold."
+    "text": "Established architecture checks, static analysis, generated-code freshness checks and coverage thresholds for specification-driven, AI-assisted delivery. A coverage-driven audit identified 9 production defects."
   },
   {
     "kind": "bullet",
-    "text": "Established architecture checks, strict static analysis, generated-code freshness checks and pre-push validation to support specification-driven, AI-assisted delivery. A coverage-driven audit identified 9 production defects."
-  },
-  {
-    "kind": "bullet",
-    "text": "Delivered the HTS ALis asset-management mobile app as sole developer, covering 43 screens and 8 modules. Implemented QR and GPS asset movements, role-based access, e-signatures and authorisation PDFs; expanded the test suite to 2,205 tests through post-launch work."
-  },
-  {
-    "kind": "bullet",
-    "text": "Built the shared Laravel asset-management API and 5-stage approval engine used by web and mobile clients, including asset loans, movement history and approval notifications."
-  },
-  {
-    "kind": "bullet",
-    "text": "Established Laravel Domain-Driven Design and database-per-tenant architecture for PEOPLEAPS, supporting automated tenant provisioning, per-workspace permissions and learning workflows. Scoped the rebuild against the incumbent .NET system's 170 endpoints and 45 entities."
+    "text": "Owned mobile and backend delivery for asset-management and approval workflows; established Domain-Driven Design, tenant isolation and workspace permissions for a learning platform."
   },
   {
     "kind": "role",
@@ -81,15 +69,47 @@
   },
   {
     "kind": "bullet",
-    "text": "Served as primary developer for F&N GO, the Flutter replacement for the React Native eOrder MY app. Built ordering, promotions, points and vouchers across a 30-screen application; owned architecture and Android and iOS release delivery through Jun 2025."
+    "text": "Served as primary developer on F&N's ordering platform, maintaining React Native eOrder MY and building its Flutter replacement. Owned architecture, native integrations and store releases through Jun 2025."
   },
   {
     "kind": "bullet",
-    "text": "Integrated AWS Cognito, device-integrity checks, Kotlin platform channels and Huawei HMS push notifications for F&N GO. Delivered English, Malay and Chinese interfaces and maintained the legacy app during the transition."
+    "text": "Built CUCKOO Malaysia's WooCommerce checkout and payment subsystem, including transactional email and scheduled payment reconciliation."
   },
   {
-    "kind": "bullet",
-    "text": "Built CUCKOO Malaysia's WooCommerce checkout and payment subsystem, including order status, transactional email and scheduled payment reconciliation."
+    "kind": "section",
+    "text": "Selected Projects"
+  },
+  {
+    "kind": "role",
+    "text": "FlowHubr | Flutter, BLoC, Laravel, Vue.js"
+  },
+  {
+    "kind": "text",
+    "text": "Migrated 13 mobile feature modules from Riverpod to BLoC and Clean Architecture. Built 1,319 automated tests at 88.3% line coverage, with an enforced 85% CI floor."
+  },
+  {
+    "kind": "role",
+    "text": "HTS ALis | Flutter, Laravel"
+  },
+  {
+    "kind": "text",
+    "text": "Sole developer of a 43-screen mobile app across 8 modules, with 2,205 tests. Built the shared API and 5-stage approval engine, QR/GPS asset tracking, e-signatures and authorisation PDFs."
+  },
+  {
+    "kind": "role",
+    "text": "PEOPLEAPS and SKILL2U | Laravel, MySQL, AWS"
+  },
+  {
+    "kind": "text",
+    "text": "Established database-per-tenant isolation, automated provisioning and workspace permissions. Scoped the Laravel rebuild against the incumbent .NET system's 170 endpoints and 45 entities."
+  },
+  {
+    "kind": "role",
+    "text": "F&N GO | Flutter, Riverpod, Kotlin, AWS Cognito"
+  },
+  {
+    "kind": "text",
+    "text": "Released a 30-screen ordering and loyalty app to Google Play and the App Store, with English, Malay and Chinese interfaces, device-integrity checks and Huawei HMS push support."
   },
   {
     "kind": "page",
@@ -198,5 +218,9 @@
   {
     "kind": "text",
     "text": "Languages: English, Malay and Chinese (full professional proficiency)"
+  },
+  {
+    "kind": "reference",
+    "text": "References available upon request."
   }
 ]
