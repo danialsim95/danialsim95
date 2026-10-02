@@ -16,4 +16,10 @@ test("freelance history starts in January 2017", () => {
   const experience = portfolioSchema.parse(content).experiences.find(item => item.id === "freelance");
   assert.equal(experience?.period, "Jan 2017 - Present");
   assert.equal(experience?.current, true);
+  assert.equal(experience?.role, "Full-Stack Developer");
+});
+test("Flow Digital titles show full-stack career progression", () => {
+  const { experiences } = portfolioSchema.parse(content);
+  assert.equal(experiences.find(item => item.id === "flow-senior")?.role, "Senior Full-Stack Developer");
+  assert.equal(experiences.find(item => item.id === "flow-developer")?.role, "Full-Stack Developer");
 });
