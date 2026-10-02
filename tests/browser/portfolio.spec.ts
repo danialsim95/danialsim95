@@ -99,6 +99,9 @@ test("resume, legacy policy, and unknown project", async ({ page }) => {
   await expect(page.locator('.experience-row')).toHaveCount(10);
   await page.goto(path('/scoscreen/index.html'));
   await expect(page.getByRole('heading', {name:'Privacy Policy',exact:true})).toBeVisible();
+  await page.goto(path('/app/scoscreen/'));
+  await expect(page).toHaveURL(/\/scoscreen\/index\.html$/);
+  await expect(page.getByRole('heading', {name:'Privacy Policy',exact:true})).toBeVisible();
   expect((await page.goto(path('/projects/unknown-project/')))?.status()).toBe(404);
 });
 test("static routes, base-path assets, and production metadata", async ({page}) => {

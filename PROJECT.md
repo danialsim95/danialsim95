@@ -83,4 +83,4 @@ The shared `danialsim` wordmark uses the tagline "Ideas. Engineered." Social SVG
 
 ## Legacy Content
 
-The PHP application remains in the repository for reference; only `out/` is published. GitHub Pages does not execute PHP or expose root API files. Existing PHP integrations need separate hosting if still used. ScoScreen's privacy page lives at `/scoscreen/index.html`, under the site's base path; `/app/scoscreen/` is a static forwarding page.
+The retired PHP application, API endpoints, Composer file, landing-page assets, and duplicate policy files have been removed. Their history remains in Git. Only `out/` is published. ScoScreen's privacy page is preserved in `public/scoscreen/` and lives at `/scoscreen/index.html`, under the site's base path; `/app/scoscreen/` remains a static forwarding page.
