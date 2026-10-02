@@ -7,7 +7,7 @@ export function ProjectVisual({ project }: { project: Project }) {
     {project.slug === "fngo-eorder" ? <div className="ordering-diagram">
       <div className="ordering-platforms"><span>React Native</span><ArrowUpRight size={20}/><strong>Flutter</strong></div>
       <div className="ordering-features"><div><ShoppingBag size={27}/><span>Ordering</span></div><div><Gift size={27}/><span>Loyalty</span></div><div><ShieldCheck size={27}/><span>Integrity</span></div></div>
-    </div> : project.slug === "hts-alis" ? <div className="platform-diagram"><div><Smartphone size={43}/><span>Flutter</span></div><Route size={30}/><div><Braces size={43}/><span>Laravel API</span></div></div> : project.category === "Mobile" ? <div className="asset-diagram">
+    </div> : project.slug === "cuckoo-e-brandshop" ? <div className="ordering-diagram"><div className="ordering-platforms"><strong>WooCommerce</strong></div><div className="ordering-features"><div><ShoppingBag size={27}/><span>Checkout</span></div><div><Check size={27}/><span>Payment</span></div><div><Route size={27}/><span>Reconcile</span></div></div></div> : project.slug === "hts-alis" ? <div className="platform-diagram"><div><Smartphone size={43}/><span>Flutter</span></div><Route size={30}/><div><Braces size={43}/><span>Laravel API</span></div></div> : project.category === "Mobile" ? <div className="asset-diagram">
       <div className="asset-node"><MapPin size={25}/><span>Locate</span></div>
       <div className="asset-hub"><ScanLine size={48}/></div>
       <div className="asset-node"><Check size={25}/><span>Track</span></div>

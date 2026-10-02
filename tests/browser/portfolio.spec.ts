@@ -9,7 +9,7 @@ test("filters, case studies, and career history", async ({ page }) => {
   await expect(page.getByRole('heading', { name: 'A stronger foundation.' })).toBeVisible();
   await page.getByRole('link', { name: 'Back to selected work' }).click();
   await page.getByRole('button', { name: 'Explore more projects' }).click();
-  await expect(page.locator('.project')).toHaveCount(8);
+  await expect(page.locator('.project')).toHaveCount(9);
   await page.getByRole('button', { name: 'View the full journey' }).click();
   await expect(page.locator('.experience-row')).toHaveCount(10);
   await expect(page.locator('.experience-row').first()).toContainText('Oct 2025 - Aug 2026');
@@ -21,7 +21,10 @@ test("contact, artwork, metadata, and mobile layout", async ({ page }) => {
   await page.getByLabel("LET'S TALK ABOUT").selectOption('A full-time opportunity');
   await expect(page.getByRole('link', {name:'Start a conversation'})).toHaveAttribute('href', /A%20full-time%20opportunity/);
   expect((await page.request.get(path('/images/engineering-workspace.webp'))).ok()).toBe(true);
-  await expect(page.getByRole('link', {name:'View my resume (PDF)'})).toHaveAttribute('href', /drive\.google\.com\/file\/d\/1YcfpXOFXL_nIlrV_YZlh4ltybcS-MOfb/);
+  await expect(page.getByRole('link', {name:'View my resume (PDF)'})).toHaveAttribute('href', path('/resume.pdf'));
+  const resumePdf = await page.request.get(path('/resume.pdf'));
+  expect(resumePdf.ok()).toBe(true);
+  expect(resumePdf.headers()['content-type']).toContain('application/pdf');
   await expect(page.getByRole('link', {name:'Email Danial',exact:true})).toHaveAttribute('href', /^mailto:danialsim95@gmail\.com/);
   await expect(page.getByRole('button', {name:'Copy email address'})).toHaveCount(0);
   const portrait = page.getByRole('img', {name:'Portrait of Danial Sim'});
@@ -97,8 +100,11 @@ test("section navigation follows both directions and respects reduced motion", a
 test("resume, legacy policy, and unknown project", async ({ page }) => {
   await page.goto(path('/resume/'));
   await expect(page.getByRole('heading', {name:'Danial Sim',exact:true})).toBeVisible();
-  await expect(page.locator('.experience-row')).toHaveCount(10);
-  await expect(page.locator('.experience-row').filter({hasText:'Independent / Freelance'})).toContainText('Jan 2017 - Present');
+  await expect(page.getByRole('heading', {name:'Team Lead | Flow Digital Asia',exact:true})).toBeVisible();
+  await expect(page.locator('main')).toContainText('Jan 2017 - Present');
+  await expect(page.getByRole('heading', {name:'Education',exact:true})).toBeVisible();
+  await expect(page.locator('main')).toContainText('Bachelor of Information Technology with Honours');
+  await expect(page.locator('main .technology-logo')).toHaveCount(0);
   await page.goto(path('/scoscreen/index.html'));
   await expect(page.getByRole('heading', {name:'Privacy Policy',exact:true})).toBeVisible();
   await page.goto(path('/app/scoscreen/'));

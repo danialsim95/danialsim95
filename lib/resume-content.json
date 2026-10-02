@@ -1,0 +1,202 @@
+[
+  {
+    "kind": "name",
+    "text": "Danial Sim"
+  },
+  {
+    "kind": "text",
+    "text": "TEAM LEAD | FULL-STACK AND MOBILE ENGINEER"
+  },
+  {
+    "kind": "text",
+    "text": "Dengkil, Selangor, Malaysia | +60 19-240 2540 | danialsim95@gmail.com"
+  },
+  {
+    "kind": "text",
+    "text": "linkedin.com/in/danialsim95 | github.com/danialsim95"
+  },
+  {
+    "kind": "section",
+    "text": "Professional Summary"
+  },
+  {
+    "kind": "text",
+    "text": "Software engineer and technical lead with experience across enterprise mobile apps, SaaS backends, e-commerce and university research. Led a mobile team of up to 6 developers and delivered production systems with Flutter, Laravel and Vue.js. Combines hands-on architecture and release ownership with automated testing and specification-driven, AI-assisted development."
+  },
+  {
+    "kind": "section",
+    "text": "Professional Experience"
+  },
+  {
+    "kind": "role",
+    "text": "Team Lead | Flow Digital Asia"
+  },
+  {
+    "kind": "text",
+    "text": "Oct 2025 - Aug 2026 | Kota Damansara, Selangor"
+  },
+  {
+    "kind": "bullet",
+    "text": "Led a 6-developer Flutter mobile team, owning architecture, code review, technical direction and release engineering for FlowHubr, a project, task and timesheet management platform."
+  },
+  {
+    "kind": "bullet",
+    "text": "Migrated FlowHubr from Riverpod to BLoC and Clean Architecture across 13 feature modules. Built 1,319 automated tests and achieved 88.3% line coverage with an enforced 85% CI threshold."
+  },
+  {
+    "kind": "bullet",
+    "text": "Established architecture checks, strict static analysis, generated-code freshness checks and pre-push validation to support specification-driven, AI-assisted delivery. A coverage-driven audit identified 9 production defects."
+  },
+  {
+    "kind": "bullet",
+    "text": "Delivered the HTS ALis asset-management mobile app as sole developer, covering 43 screens and 8 modules. Implemented QR and GPS asset movements, role-based access, e-signatures and authorisation PDFs; expanded the test suite to 2,205 tests through post-launch work."
+  },
+  {
+    "kind": "bullet",
+    "text": "Built the shared Laravel asset-management API and 5-stage approval engine used by web and mobile clients, including asset loans, movement history and approval notifications."
+  },
+  {
+    "kind": "bullet",
+    "text": "Established Laravel Domain-Driven Design and database-per-tenant architecture for PEOPLEAPS, supporting automated tenant provisioning, per-workspace permissions and learning workflows. Scoped the rebuild against the incumbent .NET system's 170 endpoints and 45 entities."
+  },
+  {
+    "kind": "role",
+    "text": "Senior Full-Stack Developer | Flow Digital Asia"
+  },
+  {
+    "kind": "text",
+    "text": "May 2025 - Sep 2025"
+  },
+  {
+    "kind": "bullet",
+    "text": "Developed PEOPLElogy PIPS sales workflows with Laravel and Vue.js, translating stakeholder requirements into sales modules and interactive pipeline dashboards."
+  },
+  {
+    "kind": "role",
+    "text": "Full-Stack Developer | Flow Digital Asia"
+  },
+  {
+    "kind": "text",
+    "text": "Jan 2024 - Apr 2025"
+  },
+  {
+    "kind": "bullet",
+    "text": "Served as primary developer for F&N GO, the Flutter replacement for the React Native eOrder MY app. Built ordering, promotions, points and vouchers across a 30-screen application; owned architecture and Android and iOS release delivery through Jun 2025."
+  },
+  {
+    "kind": "bullet",
+    "text": "Integrated AWS Cognito, device-integrity checks, Kotlin platform channels and Huawei HMS push notifications for F&N GO. Delivered English, Malay and Chinese interfaces and maintained the legacy app during the transition."
+  },
+  {
+    "kind": "bullet",
+    "text": "Built CUCKOO Malaysia's WooCommerce checkout and payment subsystem, including order status, transactional email and scheduled payment reconciliation."
+  },
+  {
+    "kind": "page",
+    "text": "Professional Experience Continued"
+  },
+  {
+    "kind": "role",
+    "text": "Software Development Engineer | Independent Freelance"
+  },
+  {
+    "kind": "text",
+    "text": "Jan 2017 - Present | Greater Kuala Lumpur"
+  },
+  {
+    "kind": "bullet",
+    "text": "Designed and delivered client web applications with Laravel, React and Angular, alongside Android modules; managed requirements, UI/UX prototyping, deployment and post-release support."
+  },
+  {
+    "kind": "role",
+    "text": "Graduate Research Assistant and Research Assistant | National University of Malaysia"
+  },
+  {
+    "kind": "text",
+    "text": "Sep 2020 - Sep 2023 | Bandar Baru Bangi"
+  },
+  {
+    "kind": "bullet",
+    "text": "Developed PHP and Laravel web modules and native Android applications for grant-funded research. Created interfaces with Figma and Adobe XD and supported user acceptance testing."
+  },
+  {
+    "kind": "bullet",
+    "text": "Co-developed MinarVMS, a visitor management system with augmented-reality indoor navigation, contributing the Android frontend and PHP backend."
+  },
+  {
+    "kind": "role",
+    "text": "Mobile Application Developer | TimeTec Group"
+  },
+  {
+    "kind": "text",
+    "text": "Jan 2020 - Aug 2020 | Cyberjaya"
+  },
+  {
+    "kind": "bullet",
+    "text": "Developed native Android features for residential and visitor management apps, including i-Neighbour and IOI Community. Supported testing, performance profiling, GitLab version control and Google Play releases."
+  },
+  {
+    "kind": "role",
+    "text": "Project Manager and Mobile Application Developer | MyXLab Solutions PLT"
+  },
+  {
+    "kind": "text",
+    "text": "Jul 2017 - Dec 2019 | Bandar Baru Bangi"
+  },
+  {
+    "kind": "text",
+    "text": "Project Manager: Mar - Dec 2019 | Mobile Developer: Aug 2018 - Feb 2019\nUI/UX Researcher: Jul 2017 - Jul 2018"
+  },
+  {
+    "kind": "bullet",
+    "text": "Managed delivery of BasKita, a UKM campus bus tracking system, coordinating stakeholders, developers and milestones. Modernised legacy Android apps and supported requirements, UI/UX and testing for a food ordering system."
+  },
+  {
+    "kind": "section",
+    "text": "Technical Skills"
+  },
+  {
+    "kind": "text",
+    "text": "Languages: Dart, PHP, SQL, JavaScript, Java, Kotlin, Bash"
+  },
+  {
+    "kind": "text",
+    "text": "Mobile: Flutter, BLoC, Cubit, Riverpod, Clean Architecture, React Native, Android, Dio, Retrofit, dependency injection, Firebase Crashlytics and Messaging, Huawei HMS"
+  },
+  {
+    "kind": "text",
+    "text": "Backend and Web: Laravel, REST APIs, Domain-Driven Design, multi-tenancy, role-based access control, MySQL, Vue.js, Inertia.js, React, Angular, WordPress, WooCommerce, CodeIgniter"
+  },
+  {
+    "kind": "text",
+    "text": "Cloud and Delivery: AWS Cognito, S3, EC2, IAM, Git, GitHub Actions, CI/CD, Android and iOS signing, App Store Connect, Google Play Console"
+  },
+  {
+    "kind": "text",
+    "text": "Quality and Leadership: Unit and widget testing, bloc_test, mocktail, PHPUnit feature tests, coverage enforcement, code review, migration planning, engineering documentation, AI-assisted development"
+  },
+  {
+    "kind": "section",
+    "text": "Education"
+  },
+  {
+    "kind": "text",
+    "text": "Bachelor of Information Technology with Honours | National University of Malaysia (UKM)"
+  },
+  {
+    "kind": "text",
+    "text": "Sep 2015 - Nov 2019 | Distinction | Major in Data Science | CGPA 3.85"
+  },
+  {
+    "kind": "section",
+    "text": "Certifications and Languages"
+  },
+  {
+    "kind": "text",
+    "text": "Android Certified Application Developer | Android ATC | 2017\nAndroid assessment certificate | TestDome | 2023"
+  },
+  {
+    "kind": "text",
+    "text": "Languages: English, Malay and Chinese (full professional proficiency)"
+  }
+]

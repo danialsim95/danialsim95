@@ -1,12 +1,12 @@
 # Hi, I'm Danial Sim.
 
-**Full-stack developer. Mobile engineer. Curious builder.**
+**Full-stack and mobile engineer with team leadership experience.**
 
 Based in Selangor, Malaysia. I turn ideas into useful software, from the first interaction to the last API call.
 
-My work spans enterprise mobile apps, business workflows, backend migrations, and technical leadership. I've also worked in university research at UKM.
+I build enterprise applications with Flutter, Laravel and Vue.js, combining architecture, automated testing and production delivery. At Flow Digital Asia, I progressed from Full-Stack Developer to Team Lead, leading a mobile team of up to 6. My FlowHubr work includes a BLoC architecture migration and 1,319 automated tests at 88.3% coverage. I've also worked in university research at UKM.
 
-[Portfolio](https://danialsim95.github.io/danialsim95/) · [Email me](mailto:danialsim95@gmail.com) · [LinkedIn](https://www.linkedin.com/in/danialsim95/) · [Resume (PDF)](https://drive.google.com/file/d/1YcfpXOFXL_nIlrV_YZlh4ltybcS-MOfb/view) · [Explore my code](https://github.com/danialsim95?tab=repositories)
+[Portfolio](https://danialsim95.github.io/danialsim95/) · [Email me](mailto:danialsim95@gmail.com) · [LinkedIn](https://www.linkedin.com/in/danialsim95/) · [Resume (PDF)](https://danialsim95.github.io/danialsim95/resume.pdf) · [Explore my code](https://github.com/danialsim95?tab=repositories)
 
 ## What I Build
 
@@ -27,13 +27,14 @@ Flutter, Laravel, Vue, and React are part of my toolkit, not a fixed recipe. I'm
 ![Vue](https://img.shields.io/badge/Vue.js-35495E?style=flat-square&logo=vuedotjs&logoColor=4FC08D)
 ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![Angular](https://img.shields.io/badge/Angular-DD0031?style=flat-square&logo=angular&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-437291?style=flat-square)
 
 Also: React Native, Kotlin, Android, MySQL, AWS, Firebase, CI/CD, and Git.
 
-**On my radar:** Go, Next.js, Nuxt, PostgreSQL, and Java Spring Boot. These are learning interests, separate from my professional stack above.
+**Portfolio experience:** Next.js and TypeScript, used to build this website.
+
+**On my radar:** Go, Nuxt, PostgreSQL, and Java Spring Boot. These are learning interests, separate from my professional stack above.
 
 ## Selected Work
 
@@ -41,8 +42,9 @@ Also: React Native, Kotlin, Android, MySQL, AWS, Firebase, CI/CD, and Git.
 | --- | --- |
 | F&N GO / eOrder MY | Flutter B2B ordering rewrite, loyalty, and native integrations |
 | Hicom-Teck See ALis | Flutter asset tracking and Laravel PHP API |
-| Flowhubr Suite | Flutter architecture, Laravel and Vue.js maintenance |
-| PEOPLEAPS + SKILL2U | Laravel migration and AWS deployment |
+| FlowHubr Suite | Team leadership, BLoC migration, automated testing and shared Laravel APIs |
+| PEOPLEAPS + SKILL2U | Multi-tenant Laravel architecture, workspace permissions and AWS deployment |
+| CUCKOO Malaysia | Custom WooCommerce checkout, payments and reconciliation |
 | PEOPLElogy PIPS | Laravel and Vue sales workflows |
 
 More project context is available on [LinkedIn](https://www.linkedin.com/in/danialsim95/). Much of my professional work lives in client repositories.
