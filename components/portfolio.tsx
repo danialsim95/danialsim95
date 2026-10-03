@@ -18,7 +18,7 @@ export function Projects({ projects }: { projects: Project[] }) {
       {['All work', 'Full stack', 'Mobile', 'Backend'].map(item => <button key={item} aria-pressed={filter === item} className={filter === item ? "active" : ""} onClick={() => setFilter(item)}>{item}</button>)}
     </div><span className="mono work-count">{String(visible.length).padStart(2, '0')} SELECTED PROJECTS</span></div>
     <div className="project-grid">
-      {visible.map((project, index) => <Link href={`/projects/${project.slug}`} className={project.caseStudy ? "project project-flagship" : "project"} key={project.slug}>
+      {visible.map((project, index) => <Link href={`/projects/${project.slug}`} className={project.caseStudy || project.slug === "pips" ? "project project-flagship" : "project"} key={project.slug}>
         <ProjectVisual project={project}/>
         <div className="project-meta"><span>{String(index + 1).padStart(2, '0')} / {project.client}</span><ArrowUpRight size={22}/></div>
         <h3>{project.title}</h3><p>{project.summary}</p>
