@@ -5,7 +5,7 @@
   },
   {
     "kind": "text",
-    "text": "TEAM LEAD | FULL-STACK AND MOBILE ENGINEER"
+    "text": "TEAM LEAD | TECHNICAL LEAD | FULL-STACK AND MOBILE ENGINEER"
   },
   {
     "kind": "text",
@@ -21,7 +21,7 @@
   },
   {
     "kind": "text",
-    "text": "Software engineer and technical lead with experience across enterprise mobile apps, SaaS backends, e-commerce and university research. Led a mobile team of up to 6 developers and delivered production systems with Flutter, Laravel and Vue.js. Combines hands-on architecture and release ownership with automated testing and specification-driven, AI-assisted development."
+    "text": "Hands-on engineering lead delivering enterprise mobile applications and SaaS platforms with Flutter, Laravel and Vue.js. Led a team of 6, shipped ordering and asset-management apps to Android and iOS, and established automated quality gates that supported 88.3% mobile test coverage. Owns architecture, migration planning, code review and release delivery, with specification-driven AI-assisted development."
   },
   {
     "kind": "section",
@@ -37,15 +37,11 @@
   },
   {
     "kind": "bullet",
-    "text": "Led a mobile team of 6, owning architecture, code review and Android and iOS release engineering. Delivered Flutter clients and shared Laravel APIs for enterprise and SaaS products."
+    "text": "Led a 6-developer mobile team and owned architecture, code review and Android and iOS releases. Connected Flutter clients to shared Laravel APIs for enterprise asset management and SaaS collaboration."
   },
   {
     "kind": "bullet",
     "text": "Established architecture checks, static analysis, generated-code freshness checks and coverage thresholds for specification-driven, AI-assisted delivery. A coverage-driven audit identified 9 production defects."
-  },
-  {
-    "kind": "bullet",
-    "text": "Owned mobile and backend delivery for asset-management and approval workflows; established Domain-Driven Design, tenant isolation and workspace permissions for a learning platform."
   },
   {
     "kind": "role",
@@ -57,7 +53,7 @@
   },
   {
     "kind": "bullet",
-    "text": "Developed PEOPLElogy PIPS sales workflows with Laravel and Vue.js, translating stakeholder requirements into sales modules and interactive pipeline dashboards."
+    "text": "Owned full-stack PIPS sales-workflow development, translating enterprise stakeholder requirements into Laravel business rules, relational data models and interactive Vue.js pipeline dashboards."
   },
   {
     "kind": "role",
@@ -74,46 +70,6 @@
   {
     "kind": "bullet",
     "text": "Built CUCKOO Malaysia's WooCommerce checkout and payment subsystem, including transactional email and scheduled payment reconciliation."
-  },
-  {
-    "kind": "section",
-    "text": "Selected Projects"
-  },
-  {
-    "kind": "role",
-    "text": "FlowHubr | Flutter, BLoC, Laravel, Vue.js"
-  },
-  {
-    "kind": "text",
-    "text": "Migrated 13 mobile feature modules from Riverpod to BLoC and Clean Architecture. Built 1,319 automated tests at 88.3% line coverage, with an enforced 85% CI floor."
-  },
-  {
-    "kind": "role",
-    "text": "HTS ALis | Flutter, Laravel"
-  },
-  {
-    "kind": "text",
-    "text": "Sole developer of a 43-screen mobile app across 8 modules, with 2,205 tests. Built the shared API and 5-stage approval engine, QR/GPS asset tracking, e-signatures and authorisation PDFs."
-  },
-  {
-    "kind": "role",
-    "text": "PEOPLEAPS and SKILL2U | Laravel, MySQL, AWS"
-  },
-  {
-    "kind": "text",
-    "text": "Established database-per-tenant isolation, automated provisioning and workspace permissions. Scoped the Laravel rebuild against the incumbent .NET system's 170 endpoints and 45 entities."
-  },
-  {
-    "kind": "role",
-    "text": "F&N GO | Flutter, Riverpod, Kotlin, AWS Cognito"
-  },
-  {
-    "kind": "text",
-    "text": "Released a 30-screen ordering and loyalty app to Google Play and the App Store, with English, Malay and Chinese interfaces, device-integrity checks and Huawei HMS push support."
-  },
-  {
-    "kind": "page",
-    "text": "Professional Experience Continued"
   },
   {
     "kind": "role",
@@ -137,11 +93,7 @@
   },
   {
     "kind": "bullet",
-    "text": "Developed PHP and Laravel web modules and native Android applications for grant-funded research. Created interfaces with Figma and Adobe XD and supported user acceptance testing."
-  },
-  {
-    "kind": "bullet",
-    "text": "Co-developed MinarVMS, a visitor management system with augmented-reality indoor navigation, contributing the Android frontend and PHP backend."
+    "text": "Developed grant-funded PHP, Laravel and Android applications, with UI/UX prototyping and user acceptance testing. Co-developed MinarVMS visitor management and augmented-reality indoor navigation."
   },
   {
     "kind": "role",
@@ -153,7 +105,7 @@
   },
   {
     "kind": "bullet",
-    "text": "Developed native Android features for residential and visitor management apps, including i-Neighbour and IOI Community. Supported testing, performance profiling, GitLab version control and Google Play releases."
+    "text": "Developed native Android features for i-Neighbour and IOI Community, supporting performance profiling, testing, GitLab version control and Google Play releases."
   },
   {
     "kind": "role",
@@ -169,7 +121,51 @@
   },
   {
     "kind": "bullet",
-    "text": "Managed delivery of BasKita, a UKM campus bus tracking system, coordinating stakeholders, developers and milestones. Modernised legacy Android apps and supported requirements, UI/UX and testing for a food ordering system."
+    "text": "Managed BasKita campus bus-tracking delivery across stakeholders, developers and milestones. Modernised legacy Android apps and conducted requirements, UI/UX and QA work for a food ordering system."
+  },
+  {
+    "kind": "page",
+    "text": "Selected Projects"
+  },
+  {
+    "kind": "role",
+    "text": "FlowHubr | Team leadership and mobile architecture | Flutter, BLoC, Laravel"
+  },
+  {
+    "kind": "bullet",
+    "text": "Re-platformed 13 feature modules from Riverpod to BLoC and Clean Architecture while owning mobile technical direction. Built 1,319 automated tests at 88.3% line coverage, enforced an 85% CI floor, and added checks for architecture boundaries and generated-code freshness."
+  },
+  {
+    "kind": "role",
+    "text": "HTS ALis | Enterprise asset management | Flutter, Laravel"
+  },
+  {
+    "kind": "bullet",
+    "text": "Digitised plant asset movements and paper sign-offs with a shared 5-stage approval engine, QR/GPS tracking, e-signatures and authorisation PDFs. Sole developer of the 43-screen, 8-module mobile client; expanded its suite to 2,205 tests through post-launch delivery."
+  },
+  {
+    "kind": "role",
+    "text": "F&N GO and eOrder MY | B2B ordering and loyalty | Flutter, Kotlin, AWS Cognito"
+  },
+  {
+    "kind": "bullet",
+    "text": "Built the Flutter replacement for Fraser & Neave's live React Native ordering app and shipped to Google Play and the App Store. Delivered catalogue-to-checkout ordering, free-of-charge and purchase-with-purchase promotions, points and voucher redemption across 30 screens, with trilingual UI, device-integrity checks and Huawei HMS push support."
+  },
+  {
+    "kind": "role",
+    "text": "PEOPLEAPS and SKILL2U | Multi-tenant learning platform | Laravel, MySQL, AWS"
+  },
+  {
+    "kind": "bullet",
+    "text": "Established Domain-Driven Design and database-per-tenant architecture with automated provisioning and per-workspace role-based access. Scoped the rebuild against 170 legacy .NET endpoints and 45 entities, supporting learning, assessments, certifications and Zoom integration in the Laravel platform."
+  },
+  {
+    "kind": "role",
+    "text": "PEOPLElogy PIPS | Enterprise CRM and sales workflows | Laravel, Vue.js"
+  },
+  {
+    "kind": "bullet",
+    "text": "Developed end-to-end sales modules spanning lead tracking, qualification and conversion. Connected interactive Vue.js dashboards to Laravel workflow logic, state transitions and relational data, translating stakeholder requirements into a usable corporate sales pipeline."
   },
   {
     "kind": "section",
@@ -221,6 +217,6 @@
   },
   {
     "kind": "reference",
-    "text": "References available upon request."
+    "text": "For additional experience and project details, visit linkedin.com/in/danialsim95.\nReferences available upon request."
   }
 ]
