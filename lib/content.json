@@ -106,7 +106,7 @@
       "client": "Flowhubr Suite",
       "category": "Full stack",
       "period": "Sep 2025 - Aug 2026",
-      "summary": "Led a mobile team of 6 and migrated FlowHubr to BLoC and Clean Architecture, with 1,319 automated tests at 88.3% line coverage.",
+      "summary": "Led a mobile team of 3 and migrated FlowHubr to BLoC and Clean Architecture, with 1,319 automated tests at 88.3% line coverage.",
       "stack": [
         "Flutter",
         "Dart",
@@ -115,7 +115,7 @@
         "Vue.js"
       ],
       "highlights": [
-        "Leadership, architecture and code review for a 6-developer mobile team",
+        "Leadership, architecture and code review for a 3-developer mobile team",
         "13 feature modules migrated from Riverpod to BLoC and Clean Architecture",
         "1,319 automated tests at 88.3% line coverage, with an 85% CI floor",
         "Laravel asset-management API and shared approval workflows"
@@ -128,7 +128,7 @@
         "sections": [
           {
             "title": "Leading the mobile delivery",
-            "text": "Led a team of up to 6 developers and set the technical direction for the Flutter client. Owned architecture decisions, code review and Android and iOS release work."
+            "text": "Led a team of up to 3 developers and set the technical direction for the Flutter client. Owned architecture decisions, code review and Android and iOS release work."
           },
           {
             "title": "Migrating the architecture",
@@ -326,7 +326,7 @@
       "role": "Team Lead",
       "company": "Flow Digital Asia",
       "period": "Oct 2025 - Aug 2026",
-      "description": "Led a mobile team of up to 6 developers. Owned Flutter architecture, code review and release delivery, with shared Laravel APIs, multi-tenant backend architecture and automated quality checks.",
+      "description": "Led a mobile team of up to 3 developers. Owned Flutter architecture, code review and release delivery, with shared Laravel APIs, multi-tenant backend architecture and automated quality checks.",
       "current": false
     },
     {

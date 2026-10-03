@@ -3,6 +3,14 @@ const path = (value: string) => `${process.env.NEXT_PUBLIC_BASE_PATH || ''}${val
 test("filters, case studies, and career history", async ({ page }) => {
   await page.goto(path('/'));
   await expect(page.getByRole('heading', { name: 'Danial Sim.', exact: true })).toBeVisible();
+  for (const filter of ['All work', 'Full stack', 'Mobile', 'Backend']) {
+    await page.getByRole('button', {name:filter,exact:true}).click();
+    const grid = await page.locator('.project-grid').boundingBox();
+    for (const card of await page.locator('.project').all()) {
+      const bounds = await card.boundingBox();
+      expect(Math.abs(bounds!.width-grid!.width)).toBeLessThanOrEqual(1);
+    }
+  }
   await page.getByRole('button', { name: 'Backend', exact: true }).click();
   await expect(page.locator('.project')).toHaveCount(1);
   await page.locator('.project').click();
@@ -99,8 +107,8 @@ test("section navigation follows both directions and respects reduced motion", a
 });
 test("resume, legacy policy, and unknown project", async ({ page }) => {
   await page.goto(path('/resume/'));
-  await expect(page.getByRole('heading', {name:'Danial Sim',exact:true})).toBeVisible();
-  await expect(page.getByRole('heading', {name:'Team Lead | Flow Digital Asia',exact:true})).toBeVisible();
+  await expect(page.getByRole('heading', {name:'DANIAL SIM WEI JIE',exact:true})).toBeVisible();
+  await expect(page.getByRole('heading', {name:/Tech Lead \| Flow Digital Asia/})).toBeVisible();
   await expect(page.locator('main')).toContainText('Jan 2017 - Present');
   await expect(page.getByRole('heading', {name:'Education',exact:true})).toBeVisible();
   await expect(page.locator('main')).toContainText('Bachelor of Information Technology with Honours');
@@ -111,6 +119,17 @@ test("resume, legacy policy, and unknown project", async ({ page }) => {
   await expect(page).toHaveURL(/\/scoscreen\/index\.html$/);
   await expect(page.getByRole('heading', {name:'Privacy Policy',exact:true})).toBeVisible();
   expect((await page.goto(path('/projects/unknown-project/')))?.status()).toBe(404);
+});
+test('project filter transitions respect motion preferences', async ({page}) => {
+  await page.emulateMedia({reducedMotion:'no-preference'});
+  await page.goto(path('/'));
+  await page.getByRole('button',{name:'Mobile',exact:true}).click();
+  await expect(page.locator('.project-grid')).toHaveCSS('animation-name','project-filter-enter');
+  await page.getByRole('button',{name:'Full stack',exact:true}).click();
+  await expect(page.locator('.project-grid')).toHaveCSS('animation-name','project-filter-enter');
+  await page.emulateMedia({reducedMotion:'reduce'});
+  await page.getByRole('button',{name:'Backend',exact:true}).click();
+  await expect(page.locator('.project-grid')).toHaveCSS('animation-name','none');
 });
 test("static routes, base-path assets, and production metadata", async ({page}) => {
   await page.goto(path('/'));

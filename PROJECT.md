@@ -33,7 +33,9 @@ Use `npm run build` followed by `npm start` to preview the actual static export.
 
 Project details and a printable resume live at `/projects/[slug]` and `/resume`. The plain, single-column resume uses reviewed content in `lib/resume-content.json`, including role progression, skills and completed education. Print styles separate the two pages and omit navigation and controls.
 
-The main resume button opens the reviewed two-page PDF at `public/resume.pdf`, configured as `/resume.pdf` in `lib/profile.ts`. Links include the GitHub Pages base path automatically. An optional `RESUME_URL` environment variable can override the link. Update both the PDF and `lib/resume-content.json` when revising the resume. The GitHub profile README links directly to the published PDF.
+The main resume button opens the supplied two-page v20261003 PDF at `public/resume.pdf`, configured as `/resume.pdf` in `lib/profile.ts`. Links include the GitHub Pages base path automatically. An optional `RESUME_URL` environment variable can override the link. Update both the PDF and `lib/resume-content.json` when revising the resume. The GitHub profile README links directly to the published PDF.
+
+Every project card spans a full grid row across all filters. Filter changes use a short fade-and-rise transition when reduced motion is not requested.
 
 ## Editing Content
 

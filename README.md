@@ -4,7 +4,7 @@
 
 Based in Selangor, Malaysia. I turn ideas into useful software, from the first interaction to the last API call.
 
-I build enterprise applications with Flutter, Laravel and Vue.js, combining architecture, automated testing and production delivery. At Flow Digital Asia, I progressed from Full-Stack Developer to Team Lead, leading a mobile team of up to 6. My FlowHubr work includes a BLoC architecture migration and 1,319 automated tests at 88.3% coverage. I've also worked in university research at UKM.
+I build enterprise applications with Flutter, Laravel and Vue.js, combining architecture, automated testing and production delivery. At Flow Digital Asia, I progressed from Full-Stack Developer to Team Lead, leading a mobile team of up to 3. My FlowHubr work includes a BLoC architecture migration and 1,319 automated tests at 88.3% coverage. I've also worked in university research at UKM.
 
 [Portfolio](https://danialsim95.github.io/danialsim95/) · [Email me](mailto:danialsim95@gmail.com) · [LinkedIn](https://www.linkedin.com/in/danialsim95/) · [Resume (PDF)](https://danialsim95.github.io/danialsim95/resume.pdf) · [Explore my code](https://github.com/danialsim95?tab=repositories)
 

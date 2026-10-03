@@ -15,6 +15,7 @@ export default function Resume() {
         case "section": return <h2 key={index}>{block.text}</h2>;
         case "role": return <h3 key={index}>{block.text}</h3>;
         case "page": return <h2 key={index} className="resume-page-break">{block.text}</h2>;
+        case "break": return <div key={index} className="resume-page-break" aria-hidden="true"/>;
         case "bullet": return <p key={index} className="resume-bullet">- {block.text}</p>;
         case "reference": return <p key={index} className="resume-reference">{block.text}</p>;
         default: return <p key={index}>{block.text}</p>;
