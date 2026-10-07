@@ -100,6 +100,7 @@ main:focus,main>section:focus{outline:none}
 .ats-resume .resume-bullet{padding-left:12px;text-indent:-12px}
 .ats-resume .resume-reference{margin-top:50px;font-size:12px}
 .resume-tools{display:flex;align-items:center;gap:22px;flex-wrap:wrap;margin-bottom:30px;font-size:13px}
+.about-copy .text-link{margin-right:24px}
 @media(max-width:760px){.ats-resume{margin:0;padding:30px 22px}.ats-resume h1{font-size:30px}}
 @media print{.resume-tools{display:none!important}.ats-resume{margin:0;padding:0;max-width:none}.ats-resume h1{font-size:23pt}.ats-resume h2{font-size:11pt;margin:9pt 0 4pt}.ats-resume h3{font-size:10.5pt;margin:9pt 0 4pt}.ats-resume p{font-size:10pt;line-height:1.08;margin-bottom:4pt}.ats-resume .resume-bullet{break-inside:avoid}.ats-resume h2,.ats-resume h3{break-after:avoid}.resume-page-break{break-before:page}@page{size:A4;margin:15mm 16.5mm}}
 @media(max-width:760px){.hero-art{background-position:70% center;opacity:.7}.hero-content{background:linear-gradient(90deg,#171b1ff0,#171b1fb8)}}

@@ -1,6 +1,19 @@
 {
   "projects": [
     {
+      "slug": "smasjid",
+      "title": "Community operations, connected.",
+      "client": "sMasjid",
+      "category": "Full stack",
+      "period": "Independent / Ongoing",
+      "summary": "Re-architecting mosque operations and community services toward a multi-tenant Laravel SaaS platform, while exploring AI-assisted automation.",
+      "stack": ["Laravel", "PHP", "MySQL"],
+      "highlights": ["Administrative workflows and asset management", "Community-facing services", "Multi-tenant SaaS architecture for broader adoption"],
+      "accent": "blue",
+      "featured": true,
+      "source": "https://www.linkedin.com/in/danialsim95/"
+    },
+    {
       "slug": "fngo-eorder",
       "title": "From ordering to loyalty.",
       "client": "F&N GO / eOrder MY",
@@ -325,7 +338,7 @@
       "id": "flow-lead",
       "role": "Team Lead",
       "company": "Flow Digital Asia",
-      "period": "Oct 2025 - Aug 2026",
+      "period": "Sep 2025 - Aug 2026",
       "description": "Led a mobile team of up to 3 developers. Owned Flutter architecture, code review and release delivery, with shared Laravel APIs, multi-tenant backend architecture and automated quality checks.",
       "current": false
     },
@@ -333,7 +346,7 @@
       "id": "flow-senior",
       "role": "Senior Full-Stack Developer",
       "company": "Flow Digital Asia",
-      "period": "May - Sep 2025",
+      "period": "May - Aug 2025",
       "description": "Developed PEOPLElogy PIPS sales workflows and pipeline dashboards with Laravel and Vue.js. Continued F&N GO release delivery and client-facing feature work.",
       "current": false
     },
@@ -350,29 +363,21 @@
       "role": "Full-Stack Developer",
       "company": "Independent / Freelance",
       "period": "Jan 2017 - Present",
-      "description": "Frontend and backend development for client projects.",
+      "description": "Developed independent, client and research applications across Laravel/PHP, Angular, Android and APIs. Built and modernised sMasjid and ScoScreen with SaaS architecture and automation.",
       "current": true
     },
     {
-      "id": "ukm-graduate",
-      "role": "Graduate Research Assistant",
-      "company": "National University of Malaysia (UKM)",
-      "period": "Mar 2021 - Sep 2023",
-      "description": "Developed grant-funded Laravel, PHP and native Android applications, with UI/UX prototyping and user acceptance testing.",
-      "current": false
-    },
-    {
       "id": "ukm-research",
-      "role": "Research Assistant",
-      "company": "National University of Malaysia (UKM)",
-      "period": "Sep 2020 - Mar 2021",
-      "description": "Co-developed MinarVMS visitor management with augmented-reality indoor navigation, contributing Android frontend and PHP backend work.",
+      "role": "Software Developer & Research Assistant",
+      "company": "Universiti Kebangsaan Malaysia (UKM)",
+      "period": "Sep 2020 - Sep 2023",
+      "description": "Developed research applications across web, APIs and Android, including FSMWear, MinarVMS, HadirUKM and ZeroWMS, with hardware integration and testing.",
       "current": false
     },
     {
       "id": "timetec",
       "role": "Mobile Application Developer",
-      "company": "TimeTec",
+      "company": "Timetec Cloud Sdn Bhd",
       "period": "Jan - Aug 2020",
       "description": "Developed native Android features for i-Neighbour and IOI Community, supporting profiling, testing and Google Play releases.",
       "current": false
@@ -387,18 +392,18 @@
     },
     {
       "id": "myxlab-mobile",
-      "role": "Mobile Application Developer",
+      "role": "Intern Mobile Application Developer",
       "company": "MyXLab Solutions PLT",
       "period": "Aug 2018 - Feb 2019",
-      "description": "Mobile application development.",
+      "description": "Contributed to Android/Ionic applications, testing and production releases.",
       "current": false
     },
     {
       "id": "myxlab-research",
-      "role": "Researcher",
+      "role": "Part-time UI/UX Designer",
       "company": "MyXLab Solutions PLT",
       "period": "Jul 2017 - Jul 2018",
-      "description": "Research for technology projects.",
+      "description": "Designed application interfaces and conducted user testing.",
       "current": false
     }
   ]

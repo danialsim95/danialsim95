@@ -4,6 +4,7 @@ export const profile = {
   github: "https://github.com/danialsim95",
   linkedin: "https://www.linkedin.com/in/danialsim95/",
   resumeUrl: "/resume.pdf",
+  atsResumeUrl: "/resume-ats.pdf",
   location: "Dengkil, Selangor, Malaysia",
   currentStack: ["Flutter", "Dart", "React Native", "Kotlin", "Android", "Laravel", "PHP", "Vue.js", "React", "JavaScript", "Angular", "Java", "MySQL", "AWS", "Firebase", "CI/CD", "Git"],
   ribbonStack: ["Flutter", "Dart", "React Native", "Laravel", "Vue.js", "React", "Next.js", "Java", "Angular", "AWS"],

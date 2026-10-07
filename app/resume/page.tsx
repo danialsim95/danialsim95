@@ -3,12 +3,14 @@ import Link from "next/link";
 import blocks from "@/lib/resume-content.json";
 import { getResumeLink } from "@/lib/resume";
 import { PrintButton } from "@/components/print-button";
+import { assetPath } from "@/lib/paths";
+import { profile } from "@/lib/profile";
 export const dynamic = "force-static";
 export const metadata: Metadata = { title: "Resume", description: "Danial Sim's team leadership, engineering experience, technical skills and education." };
 export default function Resume() {
   const resume = getResumeLink();
   return <main id="main" className="resume ats-resume">
-    <div className="resume-tools"><Link href="/">Back to portfolio</Link><a href={resume.href}>View resume PDF</a><PrintButton/></div>
+    <div className="resume-tools"><Link href="/">Back to portfolio</Link><a href={resume.href}>Designed resume (PDF)</a><a href={assetPath(profile.atsResumeUrl)}>ATS resume (PDF)</a><PrintButton/></div>
     {blocks.map((block, index) => {
       switch (block.kind) {
         case "name": return <h1 key={index}>{block.text}</h1>;
