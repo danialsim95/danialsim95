@@ -9,7 +9,8 @@ export const profile = {
   currentStack: ["Flutter", "Dart", "React Native", "Kotlin", "Android", "Laravel", "PHP", "Vue.js", "React", "JavaScript", "Angular", "Java", "MySQL", "AWS", "Firebase", "CI/CD", "Git"],
   ribbonStack: ["Flutter", "Dart", "React Native", "Laravel", "Vue.js", "React", "Next.js", "Java", "Angular", "AWS"],
   portfolioStack: ["Next.js", "TypeScript"],
-  nextStack: ["Go", "Nuxt", "PostgreSQL", "Java Spring Boot"]
+  independentStack: ["Java Spring Boot", "Nuxt", "Next.js", "PostgreSQL"],
+  nextStack: ["Go"]
 };
 
 export function siteUrl() {

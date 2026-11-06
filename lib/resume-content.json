@@ -17,7 +17,7 @@
   },
   {
     "kind": "text",
-    "text": "Hands-on Team Lead and Full-Stack Developer with 8+ years of experience delivering enterprise web, mobile and SaaS applications. Experienced owning delivery from requirements and architecture through APIs, frontend, testing, deployment and client handover. Strong in Laravel/PHP, Vue.js, Flutter, REST APIs and multi-tenant systems, with experience across business workflows and integrations. Interested in applying AI and automation to build practical products that improve operational efficiency."
+    "text": "Hands-on Team Lead and Full-Stack Developer with 7+ years of experience delivering enterprise web, mobile and SaaS applications. Experienced owning delivery from requirements and architecture through APIs, frontend, testing, deployment and client handover. Strong in Laravel/PHP, Vue.js, Flutter, REST APIs and multi-tenant systems. Migrated sMasjid from PHP/Laravel to Java Spring Boot, Nuxt, Next.js and PostgreSQL; now in UAT in production."
   },
   {
     "kind": "section",
@@ -157,7 +157,7 @@
   },
   {
     "kind": "bullet",
-    "text": "Built and modernized applications including sMasjid and ScoScreen, applying SaaS architecture, automation and modern software engineering practices."
+    "text": "Migrated sMasjid from PHP/Laravel to Java Spring Boot, Nuxt, Next.js and PostgreSQL; now in UAT in production. Other independent work includes ScoScreen."
   },
   {
     "kind": "section",
@@ -169,7 +169,7 @@
   },
   {
     "kind": "text",
-    "text": "Re-architected a mosque operations and community platform covering administrative workflows, asset management and community-facing services toward a multi-tenant Laravel SaaS model designed for broader adoption across mosques and Muslim communities, while exploring AI-assisted automation."
+    "text": "Migrated a PHP/Laravel mosque operations and community platform to Java Spring Boot, Nuxt, Next.js and PostgreSQL. Now in UAT in production. Mosque-specific CMS websites and content management remain planned."
   },
   {
     "kind": "role",
