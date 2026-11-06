@@ -73,8 +73,13 @@ test("technology logos, accessible tooltips, and F&N case study", async ({ page 
   await expect(page.locator('#technology-tooltip-0')).toBeVisible();
   await expect(page.locator('#technology-tooltip-0')).toHaveText('Flutter');
   await expect.poll(() => page.locator('img.technology-logo').evaluateAll(images => images.every(img => (img as HTMLImageElement).complete && (img as HTMLImageElement).naturalWidth > 0))).toBe(true);
-  await expect(page.locator('.future-tags')).toContainText('Java Spring Boot');
-  await expect(page.locator('.future-tags')).toContainText('Nuxt');
+  const independentStack = page.locator('.portfolio-tags').filter({ hasText: 'Java Spring Boot' });
+  await expect(independentStack).toContainText('Nuxt');
+  await expect(independentStack).toContainText('Next.js');
+  await expect(independentStack).toContainText('PostgreSQL');
+  await expect(page.locator('.future-tags')).toContainText('Go');
+  await expect(page.locator('.future-tags')).not.toContainText('Java Spring Boot');
+  await expect(page.locator('.future-tags')).not.toContainText('Nuxt');
   await page.goto(path('/projects/fngo-eorder/'));
   await expect(page.getByRole('heading', {name:'From ordering to loyalty.'})).toBeVisible();
   await expect(page.getByRole('heading', {name:'Ordering, promotions, and loyalty'})).toBeVisible();
