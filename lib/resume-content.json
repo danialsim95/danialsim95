@@ -169,7 +169,7 @@
   },
   {
     "kind": "text",
-    "text": "Migrated a PHP/Laravel mosque operations and community platform to Java Spring Boot, Nuxt, Next.js and PostgreSQL. Now in UAT in production. Mosque-specific CMS websites and content management remain planned."
+    "text": "Migrated a PHP/Laravel mosque operations and community platform to Java Spring Boot, Nuxt, Next.js and PostgreSQL. Now in UAT in production."
   },
   {
     "kind": "role",
