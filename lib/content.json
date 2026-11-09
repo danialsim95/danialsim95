@@ -5,13 +5,21 @@
       "title": "Community operations, connected.",
       "client": "sMasjid",
       "category": "Full stack",
-      "period": "Independent / Production UAT",
-      "summary": "Migrated a PHP/Laravel mosque operations and community platform to Java Spring Boot, Nuxt, Next.js and PostgreSQL. Now in user acceptance testing (UAT) in production.",
-      "stack": ["Java Spring Boot", "Nuxt", "Next.js", "PostgreSQL"],
-      "highlights": ["PHP/Laravel stack migration", "Java Spring Boot, Nuxt, Next.js and PostgreSQL", "User acceptance testing in production"],
+      "period": "Independent project",
+      "summary": "Built sMasjid in PHP/Laravel, then rebuilt it around a shared Spring Boot API backed by PostgreSQL, a React admin portal and a Next.js public site.",
+      "stack": ["PHP", "Laravel", "Java Spring Boot", "PostgreSQL", "React", "Next.js"],
+      "highlights": ["Used the original Laravel workflows as a reference for the rebuild", "Built a shared Java Spring Boot API backed by PostgreSQL", "Separated mosque staff administration from the public and member experience"],
       "accent": "blue",
       "featured": true,
-      "source": "https://www.linkedin.com/in/danialsim95/"
+      "source": "https://www.linkedin.com/in/danialsim95/",
+      "caseStudy": {
+        "overview": "I started sMasjid as a PHP/Laravel application for mosque operations and community services. In the rebuild, I used the original application as a reference and separated the backend from the interfaces used by staff and visitors.",
+        "sections": [
+          {"title": "Rebuilding the backend", "text": "I implemented the mosque workflows in a Java Spring Boot API, with PostgreSQL for persistence and Flyway to version the database schema. The API applies tenant permissions and audit logging across staff workflows such as finance, assets and rentals."},
+          {"title": "Separating staff and public experiences", "text": "I built a React and TypeScript portal for mosque staff and a Next.js site for visitors and members. Both use the same Spring API. Staff manage day-to-day operations in the portal, while visitors can browse mosque profiles, lectures and courses on the public site."}
+        ],
+        "delivery": ["Tenant-aware Spring Boot API and PostgreSQL schema migrations", "React portal for staff operations", "Next.js site for visitors and members"]
+      }
     },
     {
       "slug": "fngo-eorder",
@@ -363,7 +371,7 @@
       "role": "Full-Stack Developer",
       "company": "Independent / Freelance",
       "period": "Jan 2017 - Present",
-      "description": "Developed independent, client and research applications across web, mobile and APIs. Migrated sMasjid from PHP/Laravel to Java Spring Boot, Nuxt, Next.js and PostgreSQL; now in UAT in production. Other independent work includes ScoScreen.",
+      "description": "Developed independent, client and research applications across web, mobile and APIs. Rebuilt sMasjid from PHP/Laravel into a Spring Boot API backed by PostgreSQL, a React admin portal and a Next.js public site. Other independent work includes ScoScreen.",
       "current": true
     },
     {

@@ -9,7 +9,7 @@ export const profile = {
   currentStack: ["Flutter", "Dart", "React Native", "Kotlin", "Android", "Laravel", "PHP", "Vue.js", "React", "JavaScript", "Angular", "Java", "MySQL", "AWS", "Firebase", "CI/CD", "Git"],
   ribbonStack: ["Flutter", "Dart", "React Native", "Laravel", "Vue.js", "React", "Next.js", "Java", "Angular", "AWS"],
   portfolioStack: ["Next.js", "TypeScript"],
-  independentStack: ["Java Spring Boot", "Nuxt", "Next.js", "PostgreSQL"],
+  independentStack: ["Java Spring Boot", "PostgreSQL", "React", "Next.js"],
   nextStack: ["Go"]
 };
 

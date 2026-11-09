@@ -17,7 +17,7 @@
   },
   {
     "kind": "text",
-    "text": "Hands-on Team Lead and Full-Stack Developer with 7+ years of experience delivering enterprise web, mobile and SaaS applications. Experienced owning delivery from requirements and architecture through APIs, frontend, testing, deployment and client handover. Strong in Laravel/PHP, Vue.js, Flutter, REST APIs and multi-tenant systems. Migrated sMasjid from PHP/Laravel to Java Spring Boot, Nuxt, Next.js and PostgreSQL; now in UAT in production."
+    "text": "Hands-on Team Lead and Full-Stack Developer with 7+ years of experience delivering enterprise web, mobile and SaaS applications. Experienced owning delivery from requirements and architecture through APIs, frontend, testing, deployment and client handover. Strong in Laravel/PHP, Vue.js, Flutter, REST APIs and multi-tenant systems. Rebuilt sMasjid from PHP/Laravel into a Spring Boot API backed by PostgreSQL, a React admin portal and a Next.js public site."
   },
   {
     "kind": "section",
@@ -157,7 +157,7 @@
   },
   {
     "kind": "bullet",
-    "text": "Migrated sMasjid from PHP/Laravel to Java Spring Boot, Nuxt, Next.js and PostgreSQL; now in UAT in production. Other independent work includes ScoScreen."
+    "text": "Rebuilt sMasjid from PHP/Laravel into a Spring Boot API backed by PostgreSQL, a React admin portal and a Next.js public site. Other independent work includes ScoScreen."
   },
   {
     "kind": "section",
@@ -169,7 +169,7 @@
   },
   {
     "kind": "text",
-    "text": "Migrated a PHP/Laravel mosque operations and community platform to Java Spring Boot, Nuxt, Next.js and PostgreSQL. Now in UAT in production."
+    "text": "Built the original mosque operations platform in PHP/Laravel, then rebuilt the backend as a Java Spring Boot API backed by PostgreSQL, with a React staff portal and a Next.js public site."
   },
   {
     "kind": "role",

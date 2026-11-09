@@ -6,7 +6,7 @@ Based in Selangor, Malaysia. I turn ideas into useful software, from the first i
 
 I build enterprise applications with Flutter, Laravel and Vue.js, combining architecture, automated testing and production delivery. At Flow Digital Asia, I progressed from Full-Stack Developer to Team Lead, leading a mobile team of up to 3. My FlowHubr work includes a BLoC architecture migration and 1,319 automated tests at 88.3% coverage. I've also worked in university research at UKM.
 
-My independent sMasjid platform is now in **user acceptance testing (UAT) in production**, following migration from **PHP/Laravel to Java Spring Boot, Nuxt, Next.js and PostgreSQL**.
+I built **sMasjid** as a PHP/Laravel application for mosque operations. I used the original workflows as a reference when rebuilding the backend as a **Java Spring Boot API backed by PostgreSQL**. The API serves a **React admin portal** for mosque staff and a **Next.js public site** for visitors and members.
 
 [Portfolio](https://danialsim95.github.io/danialsim95/) · [Email me](mailto:danialsim95@gmail.com) · [LinkedIn](https://www.linkedin.com/in/danialsim95/) · [Resume (PDF)](https://danialsim95.github.io/danialsim95/resume.pdf) · [ATS Resume (PDF)](https://danialsim95.github.io/danialsim95/resume-ats.pdf) · [Explore my code](https://github.com/danialsim95?tab=repositories)
 
@@ -36,7 +36,7 @@ Also: React Native, Kotlin, Android, MySQL, AWS, Firebase, CI/CD, and Git.
 
 **Portfolio experience:** Next.js and TypeScript, used to build this website.
 
-**Independent project experience:** Java Spring Boot, Nuxt, Next.js and PostgreSQL through sMasjid's migration and production UAT.
+**Independent project experience:** Java Spring Boot, PostgreSQL, React and Next.js through the sMasjid rebuild.
 
 **On my radar:** Go.
 
@@ -44,7 +44,7 @@ Also: React Native, Kotlin, Android, MySQL, AWS, Firebase, CI/CD, and Git.
 
 | Project | Focus |
 | --- | --- |
-| sMasjid | PHP/Laravel migration to Java Spring Boot, Nuxt, Next.js and PostgreSQL; UAT in production |
+| sMasjid | PHP/Laravel origins, Spring Boot API backed by PostgreSQL, React admin portal and Next.js public site |
 | F&N GO / eOrder MY | Flutter B2B ordering rewrite, loyalty, and native integrations |
 | Hicom-Teck See ALis | Flutter asset tracking and Laravel PHP API |
 | FlowHubr Suite | Team leadership, BLoC migration, automated testing and shared Laravel APIs |
